@@ -79,6 +79,22 @@
       border-color: rgba(82, 242, 140, 0.35);
       background: rgba(82, 242, 140, 0.06);
     }
+    .gpt-button {
+      min-height: 52px;
+      margin-top: 12px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: #e12d39;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 750;
+      text-decoration: none;
+      transition: transform 160ms ease, background 160ms ease;
+    }
+    .gpt-button:hover { background: #f03b46; }
+    .gpt-button:active { transform: scale(0.98); }
+    .gpt-button:focus-visible { outline: 3px solid #ffffff; outline-offset: 3px; }
     @media (max-width: 380px) {
       main { padding: 26px 20px; border-radius: 16px; }
     }
@@ -93,6 +109,7 @@
       <div class="agent">GPT</div>
       <div class="agent">CLAUDE</div>
     </div>
+    <a class="gpt-button" href="hey.html">This is GPT</a>
   </main>
 </body>
 </html>
